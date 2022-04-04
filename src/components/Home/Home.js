@@ -1,6 +1,10 @@
 import React from 'react';
+import useReview from '../../hooks/useReview';
 
 const Home = () => {
+    const [review, setReview] = useReview();
+    console.log(review)
+
     return (
         <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
             <div className='h-full grid grid-cols-1 md:grid-cols-2 justify-items-center gap-4 md:justify-items-around content-center'>
@@ -22,6 +26,9 @@ const Home = () => {
             </div>
             </div>
             
+            <div>
+                <h5>What Bilionner Says:{review.length} </h5>
+            </div>
         </div>
     );
 };
