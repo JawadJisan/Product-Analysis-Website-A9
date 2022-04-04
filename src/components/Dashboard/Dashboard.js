@@ -44,7 +44,7 @@ const Dashboard = () => {
     <section className='grid justify-items-center grid-cols-1 md:grid-cols-2 p-2 m-2 gap-5 md:mx-20 '>
 
       <div className='w-4/5 bg-slate-200 rounded-2xl text-center  justify-center items-center'>
-        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>investment vs Revenue</h1>
+        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>Month Wise Sell</h1>
 
         <ResponsiveContainer width="100%" height={200}>
           <BarChart
@@ -69,7 +69,7 @@ const Dashboard = () => {
       </div>
 
       <div className='w-4/5 bg-slate-200 rounded-2xl text-center  justify-center items-center'>
-        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>investment vs Revenue</h1>
+        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>Investment vs Revenue</h1>
         <ResponsiveContainer width="100%" height={200}>
           <PieChart width={350} height={350}>
             <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
@@ -81,7 +81,7 @@ const Dashboard = () => {
       </div>
 
       <div className='w-4/5 bg-slate-200 rounded-2xl text-center  justify-center items-center'>
-        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>investment vs Revenue</h1>
+        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>Investment vs Revenue</h1>
         <ResponsiveContainer width="100%" height={200}>
           <LineChart
             width={400}
@@ -103,7 +103,7 @@ const Dashboard = () => {
       </div>
 
       <div className='w-4/5 bg-slate-200 rounded-2xl text-center  justify-center items-center'>
-        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>investment vs Revenue</h1>
+        <h1 className='text-lg text-bold text-blue-600 p-2 m-3 text-center'>Investment vs Revenue</h1>
         <ResponsiveContainer width="100%" height={200}>
           <AreaChart
             width={500}
