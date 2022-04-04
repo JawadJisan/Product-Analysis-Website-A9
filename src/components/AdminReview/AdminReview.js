@@ -3,7 +3,7 @@ import React from 'react';
 const AdminReview = ({admins}) => {
     // console.log(admins)
     return (
-        <div className='shadow-lg rounded-xl w-[500px] bg-yellow-50 p-5'>
+        <div className='shadow-lg rounded-xl w-[450px] bg-yellow-50 p-5'>
 
             <div className='flex-shrink-0'>
             <img src={admins.imageURL}

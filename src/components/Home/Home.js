@@ -1,9 +1,23 @@
 import React from 'react';
 import useReview from '../../hooks/useReview';
+import HomePageReview from '../HomePageReview/HomePageReview';
 
 const Home = () => {
     const [review, setReview] = useReview();
-    console.log(review)
+    // const reviewers = review;
+    const threeReview = review.slice(0,3)
+
+    // console.log(review)
+
+    console.log(threeReview)
+    // console.log(review)
+
+    // let name;
+    // for(const product of threeReview){
+    //     console.log(product)
+    //     name = product.admin;
+    // }
+   
 
     return (
         <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
@@ -26,9 +40,24 @@ const Home = () => {
             </div>
             </div>
             
-            <div>
-                <h5>What Bilionner Says:{review.length} </h5>
+            <div className='text-center mt-36'>
+                <h5 className='m-3 p-2 text-3xl font-bold font-sans '>Product Feedback ({threeReview.length}) </h5>
+                <h5 className='p-2 mb-5 text-xl font-semibold'> -- what they said -- </h5>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center'>
+                {
+                    threeReview.map(review => 
+                        // console.log(review),
+                       <HomePageReview key={review.id} review={review}>
+                       </HomePageReview>
+                    )
+                    
+                }
+                </div>
+                <button className='mx-auto py-2 px-3 text-white mt-3 rounded-2xl bg-orange-500'>See All Review</button>
+                
+
             </div>
+                
         </div>
     );
 };
