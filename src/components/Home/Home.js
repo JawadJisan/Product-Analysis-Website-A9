@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReview from '../../hooks/useReview';
 import HomePageReview from '../HomePageReview/HomePageReview';
 
@@ -6,6 +7,7 @@ const Home = () => {
     const [review, setReview] = useReview();
     // const reviewers = review;
     const threeReview = review.slice(0,3)
+    const navigate = useNavigate();
 
     // console.log(review)
 
@@ -53,7 +55,7 @@ const Home = () => {
                     
                 }
                 </div>
-                <button className='mx-auto py-2 px-3 text-white mt-3 rounded-2xl bg-orange-500'>See All Review</button>
+                <button onClick={() => navigate('/reviews')} className='mt-10 mx-auto py-2 px-3 text-white  rounded-2xl bg-sky-400'>See All Review</button>
                 
 
             </div>

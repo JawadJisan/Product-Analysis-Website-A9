@@ -7,7 +7,7 @@ const Reviews = () => {
     console.log('the',review)
     return (
         <div>
-            <h1>Review: {review.length} </h1>
+            <h1 className='text-center font-sans text-xl font-bold p-5 m-5'> Total Reviews: {review.length} </h1>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 justify-items-center'>
             {
                 review.map(admins => (
