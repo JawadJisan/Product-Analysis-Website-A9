@@ -30,7 +30,7 @@ const Home = () => {
 
             <div className='flex-row text-center justify-center items-center'>
                 <h2 className='text-xl text-gray-700 font-mono p-2 font-bold'>MH40 WIRELESS</h2>
-                <h1 className='text-2xl text-gray-800 p-3 m-2 font-bold'>Wireless Over-Ear Headphones</h1>
+                <h1 className='text-2xl text-gray-800 p-3 m-2 font-bold'>Wireless Over-Ear New Headphones</h1>
                 <p className='text-3xl'>299€</p>
                 <p className='text-2xl m-2 font-thin'>
                 The MH40 Wireless Over-Ear Headphones are a wireless version of our original, vintage aviator-inspired wired headphones. Crafted from aluminum, the headphones are wrapped in coated canvas with lambskin leather detailing on the inner headband and ear pad.
